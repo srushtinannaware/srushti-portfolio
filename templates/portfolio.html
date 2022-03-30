@@ -1,0 +1,115 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/dark-abstract.jpg')}}');padding-top: 21%;">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+                    <h1 style="color: #ffffff">My Projects</h1>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="project-container">
+    <div class="row project-row">
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="https://replit.com/@SrushtiNannawar/text-to-morse?v=1">
+                <img class="card-img-top img-fluid" src="static/images/text.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <div class="card-img-overlay">
+
+                        <h4 class="card-title">Text-to-Morse Convertor</h4>
+
+                    </div>
+                    </a>
+                    <p class="card-text">A quick command line project that will convert text to morse code, and convert from morse code back to text.</p>
+                    <p class="card-text"><small class="text-muted">Python</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="https://srush-blog.herokuapp.com/">
+                <img class="card-img-top img-fluid" src="static/images/blog.jpg">
+                <div class="card-block">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">My Personal Blog</h4>
+                    </div>
+                </a>
+                    <p class="card-text">This personal blog is built using RESTful apps with Flask. We can register and login to access blogs. User can we even comment.</p>
+                    <p class="card-text"><small class="text-muted">RESTful,Flask,API,SQLALCHEMY,JINJA</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="https://github.com/srushtinannaware/magic-bricks-web-scrapper/tree/master">
+                <img class="card-img-top img-fluid" src="static/images/apartment.jpg" alt="Card image cap">
+                <div class="card-block">
+
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Magics Bricks Apartment Web Scrapper</h4>
+                    </div>
+                    </a>
+                    <p class="card-text">This project scraps Magic bricks website and gives result according to specified details about apartment in csv.</p>
+                    <p class="card-text"><small class="text-muted">Python,Web Scrapping,requests,Beautifulsoup.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row project-row">
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="https://github.com/srushtinannaware/Covid-19-Cases-Data-Analysis">
+                <img class="card-img-top img-fluid" src="static/images/covid.jpg" alt="Card image cap">
+                <div class="card-block">
+
+                    <div class="card-img-overlay">
+                       <h4 class="card-title">Covid-19 Data Analysis</h4>
+                    </div>
+                    </a>
+                    <p class="card-text">This project Analysis Covid-19 Cases and visualizes data with Data Visualization.</p>
+                    <p class="card-text"><small class="text-muted">Python,pandas,matplotlib.</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="https://github.com/srushtinannaware/Pomodoro">
+                <img class="card-img-top img-fluid" src="static/images/pomodoro.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Pomodoro Clock</h4>
+                    </div>
+                    </a>
+                    <p class="card-text">This Application is built for time management. Using Pomodoro Technique, this application has timer ticks and sound feature for easy use.</p>
+                    <p class="card-text"><small class="text-muted">Python,tkinter</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card">
+                <a href="https://github.com/srushtinannaware/german-flash-card/tree/master">
+                <img class="card-img-top img-fluid" src="static/images/german.jpg" alt="Card image cap">
+                <div class="card-block">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">German Language Flash Cards</h4>
+                    </div>
+                    </a>
+                    <p class="card-text">This projects teaches german language using flash cards with examples, and we can keep track of out progress.</p>
+                    <p class="card-text"><small class="text-muted">Python,tkinter</small></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+  {% include "footer.html" %}
