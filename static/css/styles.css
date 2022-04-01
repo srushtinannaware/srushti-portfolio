@@ -31,7 +31,9 @@ h3 {
 @media only screen and (max-width: 992px) {
     h3 {
         font-size: 1.5rem;
+        padding-bottom: 15px;
     }
+
 }
 
 h4 {
@@ -143,34 +145,6 @@ img {
   height: auto;
 }
 
-.c {
-  width: 45%;
-
-  float: left;
-  margin-right: 50px;
-}
-
-.da {
-  width: 45%;
-
-  float: right;
-  margin-left: 50px;
-}
-
-.web {
-  width: 45%;
-
-  float: left;
-  margin-right: 50px;
-}
-
-.block {
-  width: 42%;
-
-  display: block;
-  float: right;
-  margin-left: 50px;
-}
 
 .bottom-container {
   background-color: #CDF0EA;
@@ -245,9 +219,11 @@ img {
   font-size: 32px;
 }
 
+/*
 .navbar-nav {
     padding-left: 20rem;
 }
+*/
 
 #mainNav .navbar-toggler {
   font-size: 12px;
@@ -272,6 +248,7 @@ img {
   #mainNav .navbar-brand {
     padding: 10px 20px;
     color: #fff;
+    margin-right: 25%;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -284,6 +261,45 @@ img {
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
+  .c {
+  width: 45%;
+
+  float: left;
+  margin-right: 50px;
+    }
+
+  .da {
+    width: 45%;
+
+    float: right;
+    margin-left: 50px;
+          }
+
+    .web {
+      width: 45%;
+
+      float: left;
+      margin-right: 50px;
+        }
+
+    .block {
+      width: 42%;
+
+      display: block;
+      float: right;
+      margin-left: 50px;
+    }
+    img {
+      padding-bottom: 5px;
+    }
+    .row project-row {
+        padding-bottom: 25px;
+        padding-top: 8%;
+        padding-left: 15%;
+        margin: 0;
+    }
+
+}
 }
 
 @media only screen and (min-width: 992px) {
@@ -303,6 +319,7 @@ img {
   }
   #mainNav.is-fixed .navbar-brand {
     color: #212529;
+    margin-right: 0;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #0085A1;
@@ -394,11 +411,7 @@ header.masthead .overlay {
     margin-bottom: 60px;
 }
 
-.row.project-row {
-  padding-top: 8%;
-  padding-left: 15%;
-  margin: 0;
-}
+
 
 .project-container {
   margin: 100px auto 100px auto;
@@ -421,7 +434,7 @@ header.masthead .overlay {
 }
 
 .col-sm-3 {
-    margin-right: 5%;
+    margin-right: 0;
 }
 
 .card-text {
@@ -431,10 +444,24 @@ header.masthead .overlay {
 .row {
    display: flex;
    flex-wrap: wrap;
+   margin: 0;
+   padding-bottom: 25px;
+   justify-content: center;
 }
+.row project-row {
+        padding-bottom: 25px;
+        padding-top: 8%;
+        padding-left: 15%;
+        margin: 0;
+    }
 
 @media screen and (max-width: 700px) {
       .col-sm-3  {
-         width: 100%;
+         width: 80%;
+         padding-bottom: 35px;
       }
+      .card-title:hover {
+  color: #66BFBF;
+}
+
    }
